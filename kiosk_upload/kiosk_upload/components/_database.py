@@ -11,7 +11,7 @@ DATABASES = {
         'HOST': os.environ.get('POSTGRES_HOST', '127.0.0.1'),
         'PORT': os.environ.get('POSTGRES_PORT', POSTGRES_DB_PORT),
         'OPTIONS': {
-            'options': '-c search_path=voucher_app,public',
+            'options': '-c search_path=kiosk_upload,public',
         },
     },
 }
