@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 16:52+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\kiosk_front\models.py:13
+msgid "Kiosk name"
+msgstr "Имя Киоска"
+
+#: .\kiosk_front\models.py:20
+msgid "Enabled"
+msgstr "Включён"
+
+#: .\kiosk_front\models.py:27
+msgid "Kiosk"
+msgstr "Киоск"
+
+#: .\kiosk_front\models.py:28
+msgid "Kiosks"
+msgstr "Киоски"
+
+#: .\kiosk_front\models.py:44
+msgid "Cinema name"
+msgstr "Имя Кинотеатра"
+
+#: .\kiosk_front\models.py:47
+msgid "City"
+msgstr "Город"
+
+#: .\kiosk_front\models.py:56
+msgid "Cinema"
+msgstr "Кинотеатр"
+
+#: .\kiosk_front\models.py:57
+msgid "Cinemas"
+msgstr "Кинотеатры"
