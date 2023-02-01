@@ -18,3 +18,4 @@ RUN poetry config virtualenvs.create false \
     && poetry install $(test "${BUILD_TYPE}" = "production" && echo "--without dev") --no-interaction --no-ansi --no-root
 
 COPY . .
+COPY uwsgi/uwsgi.ini uwsgi.ini
