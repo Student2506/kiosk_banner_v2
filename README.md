@@ -1,0 +1,1 @@
+# kiosk_banner_v2
