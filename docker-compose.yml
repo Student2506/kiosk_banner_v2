@@ -41,7 +41,7 @@ services:
       - static:/var/www/static/:ro
       - media:/var/www/media/:ro
     depends_on:
-      - notify_admin
+      - frontend
     ports:
       - "80:80"
 
