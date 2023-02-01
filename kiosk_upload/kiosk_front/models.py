@@ -44,7 +44,7 @@ class Cinema(models.Model):
         _('Cinema name'), max_length=FIELD_LEN, blank=False, null=False,
     )
     city = models.CharField(
-        _('City', max_length=FIELD_LEN),
+        _('City'), max_length=FIELD_LEN,
     )
     slug = models.SlugField(
         'Slug', max_length=FIELD_LEN, allow_unicode=True,

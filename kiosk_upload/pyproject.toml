@@ -13,6 +13,7 @@ pre-commit = "^3.0.2"
 django-split-settings = "^1.2.0"
 uwsgi = {version = "^2.0.21", platform = "linux"}
 psycopg2-binary = "^2.9.5"
+pillow = "^9.4.0"
 
 
 [tool.poetry.group.dev.dependencies]
