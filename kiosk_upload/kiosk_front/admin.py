@@ -8,11 +8,15 @@ from kiosk_front.models import Cinema, Kiosk
 class KioskAdmin(admin.ModelAdmin):
     """Kiosk Admin model."""
 
-    pass
+    empty_value_display = '-пусто-'
+    list_filter = ('cinema__name', 'cinema__city')
+    search_fields = ('name', 'cinema__name', 'cinema__city')
 
 
 @admin.register(Cinema)
 class CinemaAdmin(admin.ModelAdmin):
     """Cinema Admin model."""
 
+    search_fields = ('name', 'city')
+    empty_value_display = '-пусто-'
     prepopulated_fields = {'slug': ('name',)}
