@@ -15,4 +15,4 @@ class KioskAdmin(admin.ModelAdmin):
 class CinemaAdmin(admin.ModelAdmin):
     """Cinema Admin model."""
 
-    prepopulated_fields = {'slug': ('title',)}
+    prepopulated_fields = {'slug': ('name',)}
