@@ -35,3 +35,5 @@ include('components/_apps_middleware.py')
 include('components/_database.py')
 include('components/_locale.py')
 include('components/_templates.py')
+
+AUTH_USER_MODEL = 'users.CustomUser'
