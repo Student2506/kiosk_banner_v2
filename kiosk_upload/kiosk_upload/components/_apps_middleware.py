@@ -7,7 +7,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'kiosk_upload.apps.KioskFrontConfig',
+    'kiosk_front.apps.KioskFrontConfig',
     'users.apps.UsersConfig',
 ]
 
