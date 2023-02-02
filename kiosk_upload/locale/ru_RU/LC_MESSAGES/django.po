@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-01 16:52+0300\n"
+"POT-Creation-Date: 2023-02-02 10:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\kiosk_front\models.py:13
+#: .\kiosk_front\admin.py:29
+msgid "Banner Management System"
+msgstr "Система управления баннерами на киосках"
+
+#: .\kiosk_front\admin.py:30
+msgid "Banners"
+msgstr "Баннеры"
+
+#: .\kiosk_front\admin.py:31
+msgid "Welcome to Banner Management System"
+msgstr "Добро пожаловать в управление баннерами"
+
+#: .\kiosk_front\apps.py:12 .\kiosk_front\models.py:35
+msgid "Kiosks"
+msgstr "Киоски"
+
+#: .\kiosk_front\models.py:17
 msgid "Kiosk name"
 msgstr "Имя Киоска"
 
 #: .\kiosk_front\models.py:20
+msgid "Kiosk short name"
+msgstr "Короткое имя Киоска"
+
+#: .\kiosk_front\models.py:27
 msgid "Enabled"
 msgstr "Включён"
 
-#: .\kiosk_front\models.py:27
+#: .\kiosk_front\models.py:34
 msgid "Kiosk"
 msgstr "Киоск"
 
-#: .\kiosk_front\models.py:28
-msgid "Kiosks"
-msgstr "Киоски"
-
-#: .\kiosk_front\models.py:44
+#: .\kiosk_front\models.py:62
 msgid "Cinema name"
 msgstr "Имя Кинотеатра"
 
-#: .\kiosk_front\models.py:47
+#: .\kiosk_front\models.py:65
 msgid "City"
 msgstr "Город"
 
-#: .\kiosk_front\models.py:56
+#: .\kiosk_front\models.py:74
 msgid "Cinema"
 msgstr "Кинотеатр"
 
-#: .\kiosk_front\models.py:57
+#: .\kiosk_front\models.py:75
 msgid "Cinemas"
 msgstr "Кинотеатры"
+
+#: .\users\admin.py:14
+msgid "Users"
+msgstr "Пользователи"
