@@ -1,6 +1,9 @@
 """Admin forms for kiosks."""
 
 from django.contrib import admin
+from django.contrib.auth.models import Group
+from django.utils.translation import gettext_lazy as _
+
 from kiosk_front.models import Cinema, Kiosk
 
 
@@ -21,3 +24,9 @@ class CinemaAdmin(admin.ModelAdmin):
     search_fields = ('name', 'city')
     empty_value_display = '-пусто-'
     prepopulated_fields = {'slug': ('name',)}
+
+
+admin.site.site_header = _('Banner Management System')
+admin.site.site_title = _('Banners')
+admin.site.index_title = _('Welcome to Banner Management System')
+admin.site.unregister(Group)
