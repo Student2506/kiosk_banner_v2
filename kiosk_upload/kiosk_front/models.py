@@ -21,7 +21,11 @@ class Kiosk(models.Model):
     )
     ip = models.GenericIPAddressField('IP адрес киоска', blank=True, null=True)
     cinema = models.ForeignKey(
-        'Cinema', related_name='kiosks', on_delete=models.SET_NULL, null=True,
+        'Cinema',
+        related_name='kiosks',
+        on_delete=models.SET_NULL,
+        null=True,
+        verbose_name=_('Cinema'),
     )
     is_enabled = models.BooleanField(
         _('Enabled'), blank=False, null=False, default=True,
