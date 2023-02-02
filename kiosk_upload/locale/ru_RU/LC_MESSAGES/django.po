@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:50+0300\n"
+"POT-Creation-Date: 2023-02-02 10:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,6 @@ msgstr "Кинотеатр"
 msgid "Cinemas"
 msgstr "Кинотеатры"
 
-#: .\users\admin.py:14
+#: .\users\apps.py:12
 msgid "Users"
 msgstr "Пользователи"
