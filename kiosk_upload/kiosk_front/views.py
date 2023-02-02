@@ -16,6 +16,6 @@ def index(request: HttpRequest) -> HttpResponse:
     Returns:
         HttpResponse: main page
     """
-    cinemas = Cinema.object.all()
+    cinemas = Cinema.objects.all()
     form = KioskForm()
     return render(request, 'kiosk_front/index.html', {'cinemas': cinemas, 'form': form})
