@@ -11,6 +11,7 @@ class KioskAdmin(admin.ModelAdmin):
     empty_value_display = '-пусто-'
     list_filter = ('cinema__name', 'cinema__city')
     search_fields = ('name', 'cinema__name', 'cinema__city')
+    fields = ('name', 'ip', 'cinema', 'is_enabled')
 
 
 @admin.register(Cinema)
