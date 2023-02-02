@@ -1,5 +1,6 @@
 """Models to describe kiosks."""
 
+import uuid
 from typing import Any
 
 from django.db import models
@@ -11,6 +12,7 @@ FIELD_LEN = 45
 class Kiosk(models.Model):
     """Class to desribe Kiosk model."""
 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(
         _('Kiosk name'), max_length=FIELD_LEN, blank=False, null=False, unique=True,
     )
@@ -55,6 +57,7 @@ class Kiosk(models.Model):
 class Cinema(models.Model):
     """Class to describe cinema."""
 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(
         _('Cinema name'), max_length=FIELD_LEN, blank=False, null=False,
     )
