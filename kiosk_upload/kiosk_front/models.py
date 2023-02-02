@@ -1,5 +1,7 @@
 """Models to describe kiosks."""
 
+from typing import Any
+
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -10,7 +12,10 @@ class Kiosk(models.Model):
     """Class to desribe Kiosk model."""
 
     name = models.CharField(
-        _('Kiosk name'), max_length=FIELD_LEN, blank=False, null=False,
+        _('Kiosk name'), max_length=FIELD_LEN, blank=False, null=False, unique=True,
+    )
+    short_name = models.CharField(
+        _('Kiosk short name'), max_length=FIELD_LEN, blank=False, null=False, unique=True,
     )
     ip = models.GenericIPAddressField('IP адрес киоска', blank=True, null=True)
     cinema = models.ForeignKey(
@@ -35,6 +40,16 @@ class Kiosk(models.Model):
             str - name of Kiosk
         """
         return str(self.name[:FIELD_LEN])
+
+    def save(self, *args: list[Any], **kwargs: dict[Any, Any]) -> None:
+        """Save short_name in auto mode.
+
+        Args:
+            args: list[Any] - list of args
+            kwargs: dict[Any, Any] - dict of kwargs
+        """
+        self.short_name = self.name.split('.')[0]
+        super().save(*args, **kwargs)
 
 
 class Cinema(models.Model):
