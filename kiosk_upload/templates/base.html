@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Система загрузки верхнего баннера на киоски{% endblock %}</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dropzone/dist/dropzone.css' %}">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    </head>
+
+    <body>
+        <main>
+            {% include 'includes/nav.html' %}
+            <div class="container">
+                <h1>{% block header %}Система обновления верхнего баннера на киоске{% endblock %}</h1>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </main>
+        <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'dropzone/dist/dropzone.js' %}"></script>
+    </body>
+</html>
